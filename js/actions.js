@@ -48,7 +48,7 @@ var watchID = navigator.accelerometer.watchAcceleration(function(a){
 var watchID = navigator.compass.watchHeading(function(h){
 	bru.find('h2').text('Posicion Actual');
 	bru.append('<ul class="plastic pos">'+
-	'<li>X: '+magneticHeading.x+'</li>'+
+	'<li>X: '+h.magneticHeading+'</li>'+
 	'</ul>');
 	}, function(err){
 		alert(err.code);
