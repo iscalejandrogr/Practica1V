@@ -59,9 +59,10 @@ var watchID = navigator.compass.watchHeading(function(h){
 				
 		if($(this).index()==1)
 		{
-			alert('Entro');
+			
 			if(watchID)
 			{
+				alert('Entro');
 				bru.find('h2').text('Detenido');
 				bru.find('.pos').remove();
 				navigator.compass.clearWatch(watchID);
