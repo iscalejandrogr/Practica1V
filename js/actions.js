@@ -27,6 +27,7 @@ var watchID = navigator.accelerometer.watchAcceleration(function(a){
 				
 		if($(this).index()==1)
 		{
+			
 			if(watchID)
 			{
 				ace.find('h2').text('Detenido');
@@ -58,6 +59,7 @@ var watchID = navigator.compass.watchHeading(function(h){
 				
 		if($(this).index()==1)
 		{
+			alert('Entro');
 			if(watchID)
 			{
 				bru.find('h2').text('Detenido');
