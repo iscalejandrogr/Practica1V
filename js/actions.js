@@ -9,7 +9,7 @@ $(document).ready(function(){
 		var ace=$('#acelerometro');
 		var watchID	=null;
 		ace.find('.individual li').tap(function(){
-			if($(this).index())
+			if($(this).index()==0)
 			{
 				
 var watchID = navigator.accelerometer.watchAcceleration(function(a){
@@ -42,7 +42,7 @@ var watchID = navigator.accelerometer.watchAcceleration(function(a){
 		var bru=$('#brujula');
 		var watchID	=null;
 		bru.find('.individual li').tap(function(){
-			if($(this).index())
+			if($(this).index()==0)
 			{
 				
 var watchID = navigator.compass.watchHeading(function(h){
