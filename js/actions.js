@@ -41,7 +41,7 @@ var watchID = navigator.accelerometer.watchAcceleration(function(a){
 		//Brujula
 		var bru=$('#brujula');
 		var watchID	=null;
-		bru.find('.individual li').tap(function(){
+		bru.find('.individual2 li').tap(function(){
 			if($(this).index()==0)
 			{
 				
